@@ -1,0 +1,37 @@
+@import "variables";
+@import "global";
+
+
+
+.calculator{
+    width: 645px;
+    height: 770px;
+    color: $white;
+    .header{
+        display: flex;
+    }
+    .result{
+        height: 155px;
+        margin: 0.5em 0;
+        background: $screenBgBlue;
+        h1{
+            margin: 0;
+        }
+    }
+
+    .numbers{
+        width: 100%;
+        height: 580px;
+        background: $screenBgBlue;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 2em;
+        padding: 2em;
+
+        .two{
+            grid-column: span 2;
+        }
+    }
+
+
+}
