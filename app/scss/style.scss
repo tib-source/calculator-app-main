@@ -45,6 +45,7 @@
             border-radius: 5px;
             font-size: $font;
             font-family: $spartan;
+            color:$textTheme1 ;
             background: $keyBgLightOrange;
             box-shadow: 0px 5px 0px $keyShadowLightOrange;
         }
@@ -57,6 +58,7 @@
 
         .extra{
             border: none;
+            color: $white;
             background: $keyBgRed;
             box-shadow: 0px 5px 0px $keyShadowDarkRed;
         }

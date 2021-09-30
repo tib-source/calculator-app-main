@@ -93,6 +93,7 @@ body {
   border-radius: 5px;
   font-size: 32px;
   font-family: "Spartan", sans-serif;
+  color: #444b5a;
   background: #eae3dc;
   -webkit-box-shadow: 0px 5px 0px #b4a597;
           box-shadow: 0px 5px 0px #b4a597;
@@ -108,6 +109,7 @@ body {
 
 .calculator .numbers .extra {
   border: none;
+  color: white;
   background: #d03f2f;
   -webkit-box-shadow: 0px 5px 0px #93261a;
           box-shadow: 0px 5px 0px #93261a;
