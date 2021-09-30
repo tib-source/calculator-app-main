@@ -28,6 +28,8 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   background: #3a4764;
+  font-size: 32px;
+  font-family: "Spartan", sans-serif;
 }
 
 .calculator {
@@ -60,11 +62,36 @@ body {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 2em;
-  padding: 2em;
+  grid-gap: 1em;
+  padding: 1em;
 }
 
 .calculator .numbers .two {
   grid-column: span 2;
+}
+
+.calculator .numbers button {
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 32px;
+  font-family: "Spartan", sans-serif;
+  background: #eae3dc;
+  -webkit-box-shadow: 0px 5px 0px #b4a597;
+          box-shadow: 0px 5px 0px #b4a597;
+}
+
+.calculator .numbers .weird {
+  border: none;
+  color: white;
+  background: #637097;
+  -webkit-box-shadow: 0px 5px 0px #404e72;
+          box-shadow: 0px 5px 0px #404e72;
+}
+
+.calculator .numbers .extra {
+  border: none;
+  background: #d03f2f;
+  -webkit-box-shadow: 0px 5px 0px #93261a;
+          box-shadow: 0px 5px 0px #93261a;
 }
 /*# sourceMappingURL=style.css.map */

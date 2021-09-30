@@ -25,11 +25,32 @@
         background: $screenBgBlue;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-gap: 2em;
-        padding: 2em;
+        grid-gap: 1em;
+        padding: 1em;
 
         .two{
             grid-column: span 2;
+        }
+
+        button{
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: $font;
+            font-family: $spartan;
+            background: $keyBgLightOrange;
+            box-shadow: 0px 5px 0px $keyShadowLightOrange;
+        }
+        .weird{
+            border: none;
+            color: $white;
+            background: $keyBackgroundT1;
+            box-shadow: 0px 5px 0px $keyShadowT1;
+        }
+
+        .extra{
+            border: none;
+            background: $keyBgRed;
+            box-shadow: 0px 5px 0px $keyShadowDarkRed;
         }
     }
 
