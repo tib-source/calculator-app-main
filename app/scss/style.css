@@ -42,12 +42,29 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .calculator .result {
   height: 155px;
   margin: 0.5em 0;
   background: #182034;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 1em;
+  border-radius: 10px;
 }
 
 .calculator .result h1 {
@@ -64,6 +81,7 @@ body {
       grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 1em;
   padding: 1em;
+  border-radius: 10px;
 }
 
 .calculator .numbers .two {
