@@ -1,0 +1,94 @@
+// # Front-end Style Guide
+
+// ## Layout
+
+// The designs were created to the following widths:
+
+// - Mobile: 375px
+// - Desktop: 1440px
+
+// ## Colors
+
+// ### Theme 1
+
+// #### Backgrounds
+
+$toggleBlue: hsl(223, 31%, 20%); //  (toggle background, keypad background)
+$mainBgBlue : hsl(222, 26%, 31%); // (main background)
+$screenBgBlue: hsl(224, 36%, 15%) ;// (screen background)
+
+// #### Keys
+$keyBackgroundT1 : hsl(225, 21%, 49%); //(key background) 
+$keyShadowT1: hsl(224, 28%, 35%); //(key shadow)
+
+$keyBgRed: hsl(6, 63%, 50%); //(key background, toggle)
+$keyShadowDarkRed : hsl(6, 70%, 34%); // (key shadow)
+
+$keyBgLightOrange: hsl(30, 25%, 89%); // (key background)
+$keyShadowLightOrange: hsl(28, 16%, 65%); //(key shadow)
+
+// #### Text
+
+$textTheme1: hsl(221, 14%, 31%);
+$white: hsl(0, 0, 100%);
+
+// ### Theme 2
+
+// #### Backgrounds
+
+$toggleGray: hsl(0, 5%, 81%); //(toggle background, keypad background):
+$mainGray: hsl(0, 0%, 90%); //(main background)
+$screenBgGray: hsl(0, 0%, 93%); // (screen background)
+
+// #### Keys
+
+$keyBackgroundT2 : hsl(185, 42%, 37%);
+$keyShadowT2 : hsl(185, 58%, 25%);
+
+$keyBgOrange: hsl(25, 98%, 40%);
+$keyShadowOrange : hsl(25, 99%, 27%);
+
+$keyBgLightYellow : hsl(45, 7%, 89%);
+$keyShadowLightYellow: hsl(35, 11%, 61%);
+
+// #### Text
+
+$textTheme2: hsl(60, 10%, 19%);
+$whiteT2: hsl(0, 0, 100%);
+
+// ### Theme 3
+
+// #### Backgrounds
+
+$mainViolet: hsl(268, 75%, 9%);
+$toggleViolet: hsl(268, 71%, 12%);
+
+// #### Keys
+
+$keyBackgroundT3 : hsl(281, 89%, 26%);
+$keyShadowT3 : hsl(285, 91%, 52%);
+
+$keyBackgorundCyan: hsl(176, 100%, 44%);
+$keyShadowCyan: hsl(177, 92%, 70%);
+
+$keyBgDarkMagenta : hsl(268, 47%, 21%);
+$keyShadowDarkMagenta: hsl(290, 70%, 36%);
+
+//#### Text
+
+$yellowText: hsl(52, 100%, 62%)
+$darkBlueText: hsl(198, 20%, 13%)
+- White (text): hsl(0, 0, 100%)
+
+// ## Typography 
+
+// ### Body Copy 
+
+$font: 32px;
+
+// ### Font  
+
+// - Family: [Spartan](https://fonts.google.com/specimen/Spartan)
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
+$spartan:'Spartan', sans-serif;
+$weight: 700;
