@@ -1,3 +1,5 @@
+// Code for the calculator
+
 const result = document.getElementById("result")
 const buttons = document.querySelectorAll("button")
 let operators = {"add":"+", "minus":"-", "divide":"/", "multiply":"*"}
@@ -42,7 +44,7 @@ function checkDot(element){
 
 
 function updateResult(){
-    result.textContent = firstNumber + operator + secondNumber
+    result.textContent = firstNumber + " " +  operator + " " + secondNumber
 }
 
 
@@ -81,13 +83,28 @@ function evaluateSpecial(element){
 
             break
         case "DEL":
-            let text = result.textContent.split(""),
-            deleted = text.pop()
-
-            if(Object.values(operators).includes(deleted)){
-                reset()
-                updateResult()
+            let text = result.textContent.split(" ")
+            let deleted;
+            if(text.length==1){
+                deleted = text[0].split("")
+                deleted.pop()
+                firstNumber = deleted.join("")
+            }else if(text.length==3){
+                deleted = text[2].split("")
+                deleted.pop()
+                firstNumber = deleted.join("")
+            }else if(text.length==2){
+                deleted = text[1].split("")
+                let done = deleted.pop()
+                if(Object.values(operators).includes(done)){
+                    operator = ""
+                    secondNumber = ""
+                    updateResult()
+                }
             }
+
+
+
             result.textContent = text.join("")
             break
     }
