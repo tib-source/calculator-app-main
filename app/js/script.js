@@ -45,6 +45,9 @@ function checkDot(element){
 
 function updateResult(){
     result.textContent = firstNumber + " " +  operator + " " + secondNumber
+    if (result.textContent.split("").length>11){
+        result.style.font_size="1rem"
+    }
 }
 
 
@@ -83,17 +86,25 @@ function evaluateSpecial(element){
 
             break
         case "DEL":
-            let text = result.textContent.split(" ")
+            let text = result.textContent.split(" ").filter(Boolean)
             let deleted;
+            console.log(text, "main")
+
             if(text.length==1){
+                console.log(text)
                 deleted = text[0].split("")
+                console.log(deleted)
                 deleted.pop()
                 firstNumber = deleted.join("")
+                updateResult()
             }else if(text.length==3){
                 deleted = text[2].split("")
+                console.log(deleted, 3)
                 deleted.pop()
-                firstNumber = deleted.join("")
+                secondNumber = deleted.join("")
+                updateResult()
             }else if(text.length==2){
+                console.log(deleted, 2)
                 deleted = text[1].split("")
                 let done = deleted.pop()
                 if(Object.values(operators).includes(done)){
@@ -102,10 +113,6 @@ function evaluateSpecial(element){
                     updateResult()
                 }
             }
-
-
-
-            result.textContent = text.join("")
             break
     }
 }
