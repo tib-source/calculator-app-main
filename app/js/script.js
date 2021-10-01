@@ -9,7 +9,9 @@ let secondNumber = ""
 
 buttons.forEach((element,index)=>{
     element.addEventListener("click", ()=>{
-        if(checkOperator(element)){
+        if(checkSpecial(element)){
+            return evaluateSpecial(element)
+        }else if(checkOperator(element)){
             if(operatorUsed){operator = ""}
             operator += operators[element.id]
             operatorUsed = true
@@ -53,4 +55,40 @@ function checkSpecial(element){
         }
     })
     return (!count == 0)
+}
+
+function reset(){
+    operatorUsed = false
+    firstNumber = ""
+    operator = ""
+    secondNumber = ""
+}
+
+function evaluateSpecial(element){
+    let special = element.textContent
+    switch(special){
+        case "=":
+            let final = eval(result.textContent)
+            result.textContent = final
+            reset()
+            firstNumber = final
+            updateResult()
+            break
+        case "RESET":
+            reset()
+            result.textContent = ""
+            updateResult()
+
+            break
+        case "DEL":
+            let text = result.textContent.split(""),
+            deleted = text.pop()
+
+            if(Object.values(operators).includes(deleted)){
+                reset()
+                updateResult()
+            }
+            result.textContent = text.join("")
+            break
+    }
 }
