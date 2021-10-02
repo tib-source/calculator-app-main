@@ -72,8 +72,8 @@
         height: toRem(580);
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-gap: Min(1rem, 2em);
-        padding: Min(1rem, 2em);
+        grid-gap: 1rem;
+        padding: 1rem;
         border-radius: toRem(10);
         
 
@@ -91,12 +91,10 @@
         }
         .weird{
             border: none;
-            color: $white;
         }
 
         .extra{
             border: none;
-            color: $white;
         }
     }
 
@@ -106,66 +104,66 @@
 
 .theme1{
     &-main{
-        background: $mainViolet;
-        color: $yellowText;
+        background: $mainBgBlue;
+        color: $white;
     }
     &-screen{
-        background: $screenBgViolet;
-        color: $yellowText;
+        background: $screenBgBlue;
+        color: $white;
 
     }
     &-toggle{
-        background: $toggleViolet;
+        background: $toggleBlue;
     }
     &-text{
-        color:$yellowText;
+        color:$white;
     }
     &-key{
-        color: $yellowText;
-        background: $keyBgDarkMagenta;
-        box-shadow: 0 toRem(5) 0 $keyShadowDarkMagenta;
+        color: $textTheme1;
+        background: $keyBgLightOrange;
+        box-shadow: 0 toRem(5) 0 $keyShadowLightOrange;
     }
     &-worded{
         color: $white;
-        background: $keyBackgroundT3;
-        box-shadow: 0 toRem(5) 0 $keyShadowT3;
+        background: $keyBackgroundT1;
+        box-shadow: 0 toRem(5) 0 $keyShadowT1;
     }
     &-equals{
-        color: $darkBlueText;
-        background: $keyBackgorundCyan;
-        box-shadow: 0 toRem(5) 0 $keyShadowCyan;
+        color: $textTheme1;
+        background: $keyBgRed;
+        box-shadow: 0 toRem(5) 0 $keyShadowDarkRed;
     }
 }
 .theme2{
     &-main{
-        background: $mainViolet;
-        color: $yellowText;
+        background: $mainGray;
+        color: $textTheme2;
     }
     &-screen{
-        background: $screenBgViolet;
-        color: $yellowText;
+        background: $screenBgGray;
+        color: $textTheme2;
 
     }
     &-toggle{
-        background: $toggleViolet;
+        background: $toggleGray;
     }
     &-text{
-        color:$yellowText;
+        color:$textTheme2;
     }
     &-key{
-        color: $yellowText;
-        background: $keyBgDarkMagenta;
-        box-shadow: 0 toRem(5) 0 $keyShadowDarkMagenta;
+        color: $textTheme2;
+        background: $keyBgLightYellow;
+        box-shadow: 0 toRem(5) 0 $keyShadowLightYellow;
     }
     &-worded{
         color: $white;
-        background: $keyBackgroundT3;
-        box-shadow: 0 toRem(5) 0 $keyShadowT3;
+        background: $keyBackgroundT2;
+        box-shadow: 0 toRem(5) 0 $keyShadowT2;
     }
     &-equals{
         color: $darkBlueText;
-        background: $keyBackgorundCyan;
-        box-shadow: 0 toRem(5) 0 $keyShadowCyan;
+        background: $keyBgOrange;
+        box-shadow: 0 toRem(5) 0 $keyShadowOrange;
     }
 }
 
@@ -199,5 +197,13 @@
         color: $darkBlueText;
         background: $keyBackgorundCyan;
         box-shadow: 0 toRem(5) 0 $keyShadowCyan;
+    }
+}
+
+@media (max-width:toRem(600)) {
+    .calculator{
+        .numbers{
+            gap: 0.2em;
+        }
     }
 }

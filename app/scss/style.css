@@ -128,8 +128,8 @@ body {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: Min(1rem, 2em);
-  padding: Min(1rem, 2em);
+  grid-gap: 1rem;
+  padding: 1rem;
   border-radius: 0.625rem;
 }
 
@@ -148,90 +148,88 @@ body {
 
 .calculator .numbers .weird {
   border: none;
-  color: white;
 }
 
 .calculator .numbers .extra {
   border: none;
-  color: white;
 }
 
 .theme1-main {
-  background: #160628;
-  color: #ffe53d;
+  background: #3a4764;
+  color: white;
 }
 
 .theme1-screen {
-  background: #1d0934;
-  color: #ffe53d;
+  background: #182034;
+  color: white;
 }
 
 .theme1-toggle {
-  background: #1d0934;
+  background: #232c43;
 }
 
 .theme1-text {
-  color: #ffe53d;
+  color: white;
 }
 
 .theme1-key {
-  color: #ffe53d;
-  background: #341c4f;
-  -webkit-box-shadow: 0 0.3125rem 0 #871c9c;
-          box-shadow: 0 0.3125rem 0 #871c9c;
+  color: #444b5a;
+  background: #eae3dc;
+  -webkit-box-shadow: 0 0.3125rem 0 #b4a597;
+          box-shadow: 0 0.3125rem 0 #b4a597;
 }
 
 .theme1-worded {
   color: white;
-  background: #58077d;
-  -webkit-box-shadow: 0 0.3125rem 0 #bc15f4;
-          box-shadow: 0 0.3125rem 0 #bc15f4;
+  background: #637097;
+  -webkit-box-shadow: 0 0.3125rem 0 #404e72;
+          box-shadow: 0 0.3125rem 0 #404e72;
 }
 
 .theme1-equals {
-  color: #1b2428;
-  background: #00e0d1;
-  -webkit-box-shadow: 0 0.3125rem 0 #6cf9f2;
-          box-shadow: 0 0.3125rem 0 #6cf9f2;
+  color: #444b5a;
+  background: #d03f2f;
+  -webkit-box-shadow: 0 0.3125rem 0 #93261a;
+          box-shadow: 0 0.3125rem 0 #93261a;
 }
 
 .theme2-main {
-  background: #160628;
-  color: #ffe53d;
+  background: #e6e6e6;
+  color: #35352c;
 }
 
 .theme2-screen {
-  background: #1d0934;
-  color: #ffe53d;
+  background: #ededed;
+  color: #35352c;
 }
 
 .theme2-toggle {
-  background: #1d0934;
+  background: #d1cccc;
 }
 
 .theme2-text {
-  color: #ffe53d;
+  color: #35352c;
 }
 
 .theme2-key {
-  color: #ffe53d;
-  background: #341c4f;
-  -webkit-box-shadow: 0 0.3125rem 0 #871c9c;
-          box-shadow: 0 0.3125rem 0 #871c9c;
+  color: #35352c;
+  background: #e5e4e1;
+  -webkit-box-shadow: 0 0.3125rem 0 #a69d91;
+          box-shadow: 0 0.3125rem 0 #a69d91;
 }
 
 .theme2-worded {
   color: white;
-  background: #58077d;
-  -webkit-box-shadow: 0 0.3125rem 0 #bc15f4;
-          box-shadow: 0 0.3125rem 0 #bc15f4;
+  background: #377f86;
+  -webkit-box-shadow: 0 0.3125rem 0 #1b5f65;
+          box-shadow: 0 0.3125rem 0 #1b5f65;
 }
 
 .theme2-equals {
   color: #1b2428;
-  background: #00e0d1;
-  -webkit-box-shadow: 0 0.3125rem 0 #6cf9f2;
-          box-shadow: 0 0.3125rem 0 #6cf9f2;
+  background: #ca5502;
+  -webkit-box-shadow: 0 0.3125rem 0 #893901;
+          box-shadow: 0 0.3125rem 0 #893901;
 }
 
 .theme3-main {
@@ -271,5 +269,11 @@ body {
   background: #00e0d1;
   -webkit-box-shadow: 0 0.3125rem 0 #6cf9f2;
           box-shadow: 0 0.3125rem 0 #6cf9f2;
+}
+
+@media (max-width: 37.5rem) {
+  .calculator .numbers {
+    gap: 0.2em;
+  }
 }
 /*# sourceMappingURL=style.css.map */
