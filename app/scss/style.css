@@ -38,6 +38,17 @@ body {
   color: white;
 }
 
+.calculator input {
+  margin: 0 0.25rem;
+  padding: 0;
+}
+
+.calculator label {
+  text-align: center;
+  font-size: 0.875rem;
+  margin-bottom: 0.3125rem;
+}
+
 .calculator .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -48,6 +59,46 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  font-size: 1.125rem;
+}
+
+.calculator .header .theme {
+  display: inherit;
+}
+
+.calculator .header .theme small {
+  text-transform: uppercase;
+  margin: auto;
+  padding-right: 1rem;
+}
+
+.calculator .header form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.calculator .header form > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+.calculator .header form .slider {
+  height: 1.5rem;
+  width: 4rem;
+  border-radius: 2rem;
+  position: absolute;
+  background: #182034;
+  bottom: -0.3rem;
+  opacity: 0.4;
+  pointer-events: none;
+  /*This is the key.*/
 }
 
 .calculator .result {
