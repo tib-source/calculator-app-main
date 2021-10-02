@@ -125,14 +125,14 @@ function evaluateSpecial(element){
 // const result = document.getElementById("result")
 // const buttons = document.querySelectorAll("button")
 let weird = document.querySelectorAll(".weird")
-let special = document.querySelectorAll(".special")
+let special = document.querySelector("#equal")
 let calculator = document.querySelector(".calculator")
 let slider = document.querySelector(".slider")
 let body = document.querySelector("body")
 
 let theme = "theme"
-
 let radio = document.querySelectorAll("input[type=radio]")
+updateTheme("theme1")
 radio.forEach(toggle=>{
     toggle.addEventListener("click", ()=>{
         theme += toggle.value
@@ -143,5 +143,11 @@ radio.forEach(toggle=>{
 
 
 function updateTheme(theme){
-    console.log(body.classList)
+    body.classList.add(`${theme} ${theme}-body`)
+    calculator.classList.add(`${theme} ${theme}-body`)
+    slider.classList.add(`${theme} ${theme}-body`)
+    result.classList.add(`${theme} ${theme}-text`)
+    buttons.forEach(button=> button.classList.add(`${theme} ${theme}-key`))
+    weird.forEach(elem => elem.classList.add(`${theme} ${theme}-worded`))
+    special.forEach(elem => elem.classList.add(`${theme} ${theme}-equals`))
 }
