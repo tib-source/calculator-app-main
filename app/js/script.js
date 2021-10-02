@@ -1,6 +1,6 @@
 // Code for the calculator
 
-const result = document.getElementById("result")
+const result = document.querySelector(".result")
 const buttons = document.querySelectorAll("button")
 let operators = {"add":"+", "minus":"-", "divide":"/", "multiply":"*"}
 
@@ -129,25 +129,71 @@ let special = document.querySelector("#equal")
 let calculator = document.querySelector(".calculator")
 let slider = document.querySelector(".slider")
 let body = document.querySelector("body")
+let numbers = document.querySelector(".numbers")
 
-let theme = "theme"
+
+let previousTheme = ""
+
+
 let radio = document.querySelectorAll("input[type=radio]")
-updateTheme("theme1")
+updateTheme("theme1", true)
 radio.forEach(toggle=>{
     toggle.addEventListener("click", ()=>{
+        if(toggle.checked){
+        let theme = "theme"
         theme += toggle.value
         updateTheme(theme)
+        }
     })
 })
 
+function cleanClasses(){
+    result.className = "result"
+    buttons.forEach(button=> {
+        let arr = button.classList
+        if (arr.contains("opeator")){
+            return button.classList = ["operator"]
+        }else if (arr.contains("two")){
+            button.classList.remove(...short(previousTheme, "equals"))
+            return button.classList.remove(...short(previousTheme, "worded"))
+        }else if(arr.contains("weird")){
+            return button.classList = ["weird"]            
+        }else{
+            return button.classList = []
+        }
+    })
+    calculator.className = "calculator"
+    slider.className = "slider"
+    body.className = ""
+    numbers.className = "numbers"
+}
+
+function short(theme, text="none"){
+    if(text == "none"){
+        return `${theme}`
+    }else{
+        return [`${theme}`,`${theme}-${text}`]
+    }
+}
 
 
-function updateTheme(theme){
-    body.classList.add(`${theme} ${theme}-body`)
-    calculator.classList.add(`${theme} ${theme}-body`)
-    slider.classList.add(`${theme} ${theme}-body`)
-    result.classList.add(`${theme} ${theme}-text`)
-    buttons.forEach(button=> button.classList.add(`${theme} ${theme}-key`))
-    weird.forEach(elem => elem.classList.add(`${theme} ${theme}-worded`))
-    special.forEach(elem => elem.classList.add(`${theme} ${theme}-equals`))
+function updateTheme(curr, first=false){
+    if (!first){
+        cleanClasses()
+    }
+    body.classList.add(...short(curr,"main"))
+    calculator.classList.add(...short(curr, "text"))
+    numbers.classList.add(...short(curr, "toggle"))
+    slider.classList.add(...short(curr, "toggle"))
+    result.classList.add(...short(curr,"screen"))
+    special.classList.add(...short(curr,"equals"))
+    buttons.forEach(button=>{
+        if(button.value == ""){
+            button.classList.add(...short(curr, "key"))
+        }else{
+            console.log(button.classList.contains("hello"), "meow")
+        }
+    })
+    weird.forEach(elem => elem.classList.add(...short(curr, "worded")))
+    previousTheme = curr
 }
