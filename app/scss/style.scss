@@ -90,24 +90,90 @@
             cursor: pointer;
             border-radius: toRem(5);
             font-family: $spartan;
-            color:$textTheme1 ;
-            background: $keyBgLightOrange;
-            box-shadow: 0 toRem(5) 0 $keyShadowLightOrange;
         }
         .weird{
             border: none;
             color: $white;
-            background: $keyBackgroundT1;
-            box-shadow: 0 toRem(5) 0 $keyShadowT1;
         }
 
         .extra{
             border: none;
             color: $white;
-            background: $keyBgRed;
-            box-shadow: 0 toRem(5) 0 $keyShadowDarkRed;
         }
     }
 
 
+}
+
+
+.theme1{
+    color: $white;
+    &-body{
+        background: $mainBgBlue;
+    }
+    &-main{
+        background: $screenBgBlue
+    }
+    &-text{
+        color: $textTheme1    
+    }
+    &-key{
+        color: $textTheme1;
+        background: $keyBgLightOrange;
+        box-shadow: 0 toRem(5) 0 $keyShadowLightOrange;
+    }
+    &-worded{
+        background: $keyBackgroundT1;
+        box-shadow: 0 toRem(5) 0 $keyShadowT1;
+    }
+    &-equals{
+        background: $keyBgRed;
+        box-shadow: 0 toRem(5) 0 $keyShadowDarkRed;
+    }
+}
+.theme2{
+    color: $white;
+
+    &-main{
+        background: $screenBgBlue
+    }
+    &-text{
+        color: $textTheme1    
+    }
+    &-key{
+        background: $keyBgLightOrange;
+        box-shadow: 0 toRem(5) 0 $keyShadowLightOrange;
+    }
+    &-worded{
+        background: $keyBackgroundT1;
+        box-shadow: 0 toRem(5) 0 $keyShadowT1;
+    }
+    &-equals{
+        background: $keyBgRed;
+        box-shadow: 0 toRem(5) 0 $keyShadowDarkRed;
+    }
+}
+.theme3{
+    color: $white;
+    &-body{
+        background: $mainBgBlue;
+    }
+    &-main{
+        background: $screenBgBlue
+    }
+    &-text{
+        color: $textTheme1    
+    }
+    &-key{
+        background: $keyBgLightOrange;
+        box-shadow: 0 toRem(5) 0 $keyShadowLightOrange;
+    }
+    &-worded{
+        background: $keyBackgroundT1;
+        box-shadow: 0 toRem(5) 0 $keyShadowT1;
+    }
+    &-equals{
+        background: $keyBgRed;
+        box-shadow: 0 toRem(5) 0 $keyShadowDarkRed;
+    }
 }

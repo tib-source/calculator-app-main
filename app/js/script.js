@@ -122,7 +122,26 @@ function evaluateSpecial(element){
 
 
 // Changing themes
+// const result = document.getElementById("result")
+// const buttons = document.querySelectorAll("button")
+let weird = document.querySelectorAll(".weird")
+let special = document.querySelectorAll(".special")
+let calculator = document.querySelector(".calculator")
+let slider = document.querySelector(".slider")
+let body = document.querySelector("body")
+
+let theme = "theme"
+
+let radio = document.querySelectorAll("input[type=radio]")
+radio.forEach(toggle=>{
+    toggle.addEventListener("click", ()=>{
+        theme += toggle.value
+        updateTheme(theme)
+    })
+})
 
 
 
-
+function updateTheme(theme){
+    console.log(body.classList)
+}

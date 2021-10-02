@@ -27,7 +27,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #3a4764;
   font-family: "Spartan", sans-serif;
   font-size: 32px;
 }
@@ -147,23 +146,112 @@ body {
   cursor: pointer;
   border-radius: 0.3125rem;
   font-family: "Spartan", sans-serif;
+}
+
+.calculator .numbers .weird {
+  border: none;
+  color: white;
+}
+
+.calculator .numbers .extra {
+  border: none;
+  color: white;
+}
+
+.theme1 {
+  color: white;
+}
+
+.theme1-body {
+  background: #3a4764;
+}
+
+.theme1-main {
+  background: #182034;
+}
+
+.theme1-text {
+  color: #444b5a;
+}
+
+.theme1-key {
   color: #444b5a;
   background: #eae3dc;
   -webkit-box-shadow: 0 0.3125rem 0 #b4a597;
           box-shadow: 0 0.3125rem 0 #b4a597;
 }
 
-.calculator .numbers .weird {
-  border: none;
-  color: white;
+.theme1-worded {
   background: #637097;
   -webkit-box-shadow: 0 0.3125rem 0 #404e72;
           box-shadow: 0 0.3125rem 0 #404e72;
 }
 
-.calculator .numbers .extra {
-  border: none;
+.theme1-equals {
+  background: #d03f2f;
+  -webkit-box-shadow: 0 0.3125rem 0 #93261a;
+          box-shadow: 0 0.3125rem 0 #93261a;
+}
+
+.theme2 {
   color: white;
+}
+
+.theme2-main {
+  background: #182034;
+}
+
+.theme2-text {
+  color: #444b5a;
+}
+
+.theme2-key {
+  background: #eae3dc;
+  -webkit-box-shadow: 0 0.3125rem 0 #b4a597;
+          box-shadow: 0 0.3125rem 0 #b4a597;
+}
+
+.theme2-worded {
+  background: #637097;
+  -webkit-box-shadow: 0 0.3125rem 0 #404e72;
+          box-shadow: 0 0.3125rem 0 #404e72;
+}
+
+.theme2-equals {
+  background: #d03f2f;
+  -webkit-box-shadow: 0 0.3125rem 0 #93261a;
+          box-shadow: 0 0.3125rem 0 #93261a;
+}
+
+.theme3 {
+  color: white;
+}
+
+.theme3-body {
+  background: #3a4764;
+}
+
+.theme3-main {
+  background: #182034;
+}
+
+.theme3-text {
+  color: #444b5a;
+}
+
+.theme3-key {
+  background: #eae3dc;
+  -webkit-box-shadow: 0 0.3125rem 0 #b4a597;
+          box-shadow: 0 0.3125rem 0 #b4a597;
+}
+
+.theme3-worded {
+  background: #637097;
+  -webkit-box-shadow: 0 0.3125rem 0 #404e72;
+          box-shadow: 0 0.3125rem 0 #404e72;
+}
+
+.theme3-equals {
   background: #d03f2f;
   -webkit-box-shadow: 0 0.3125rem 0 #93261a;
           box-shadow: 0 0.3125rem 0 #93261a;
