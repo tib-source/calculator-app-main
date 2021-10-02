@@ -108,6 +108,7 @@ function evaluateSpecial(element){
                 deleted = text[1].split("")
                 let done = deleted.pop()
                 if(Object.values(operators).includes(done)){
+                    firstNumber.trim()
                     operator = ""
                     secondNumber = ""
                     updateResult()

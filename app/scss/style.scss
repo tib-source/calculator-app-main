@@ -21,6 +21,7 @@
         justify-content: flex-end;
         padding: 1rem;
         border-radius: toRem(10);
+        overflow: auto;
         h1{
             margin: 0;
 
@@ -33,8 +34,8 @@
         background: $screenBgBlue;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-gap: calc(min(1rem, 2vw));
-        padding: calc(min(1rem, 2vw));
+        grid-gap: Min(1rem, 2em);
+        padding: Min(1rem, 2em);
         border-radius: toRem(10);
         
 
@@ -44,7 +45,7 @@
 
         button{
             padding: 0;
-            height: 10vh;
+            height: 5rem;
             font-size: toRem($font);
             cursor: pointer;
             border-radius: toRem(5);
